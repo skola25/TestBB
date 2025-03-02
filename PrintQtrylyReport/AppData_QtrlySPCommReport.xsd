@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AppData_QtrlySPCommReport" targetNamespace="http://tempuri.org/AppData_QtrlySPCommReport.xsd" xmlns:mstns="http://tempuri.org/AppData_QtrlySPCommReport.xsd" xmlns="http://tempuri.org/AppData_QtrlySPCommReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QAPortalConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QAPortalConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PrintQtrylyReport.Properties.Settings.GlobalReference.Default.QAPortalConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="qtrly_sales_comm_earned_vTableAdapter" GeneratorDataComponentClassName="qtrly_sales_comm_earned_vTableAdapter" Name="qtrly_sales_comm_earned_v" UserDataComponentName="qtrly_sales_comm_earned_vTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QAPortalConnectionString (Settings)" DbObjectName="QAPortal.dbo.qtrly_sales_comm_earned_v" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT sales_person, customer, prod_name, Quarterly, Commission_Earned FROM dbo.qtrly_sales_comm_earned_v</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="sales_person" DataSetColumn="sales_person" />
+              <Mapping SourceColumn="customer" DataSetColumn="customer" />
+              <Mapping SourceColumn="prod_name" DataSetColumn="prod_name" />
+              <Mapping SourceColumn="Quarterly" DataSetColumn="Quarterly" />
+              <Mapping SourceColumn="Commission_Earned" DataSetColumn="Commission_Earned" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AppData_QtrlySPCommReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="AppData_QtrlySPCommReport" msprop:Generator_DataSetName="AppData_QtrlySPCommReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="qtrly_sales_comm_earned_v" msprop:Generator_RowEvHandlerName="qtrly_sales_comm_earned_vRowChangeEventHandler" msprop:Generator_RowDeletedName="qtrly_sales_comm_earned_vRowDeleted" msprop:Generator_RowDeletingName="qtrly_sales_comm_earned_vRowDeleting" msprop:Generator_RowEvArgName="qtrly_sales_comm_earned_vRowChangeEvent" msprop:Generator_TablePropName="qtrly_sales_comm_earned_v" msprop:Generator_RowChangedName="qtrly_sales_comm_earned_vRowChanged" msprop:Generator_RowChangingName="qtrly_sales_comm_earned_vRowChanging" msprop:Generator_TableClassName="qtrly_sales_comm_earned_vDataTable" msprop:Generator_RowClassName="qtrly_sales_comm_earned_vRow" msprop:Generator_TableVarName="tableqtrly_sales_comm_earned_v" msprop:Generator_UserTableName="qtrly_sales_comm_earned_v">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sales_person" msprop:Generator_ColumnPropNameInRow="sales_person" msprop:Generator_ColumnPropNameInTable="sales_personColumn" msprop:Generator_ColumnVarNameInTable="columnsales_person" msprop:Generator_UserColumnName="sales_person">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="customer" msprop:Generator_ColumnPropNameInRow="customer" msprop:Generator_ColumnPropNameInTable="customerColumn" msprop:Generator_ColumnVarNameInTable="columncustomer" msprop:Generator_UserColumnName="customer">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="prod_name" msprop:Generator_ColumnPropNameInRow="prod_name" msprop:Generator_ColumnPropNameInTable="prod_nameColumn" msprop:Generator_ColumnVarNameInTable="columnprod_name" msprop:Generator_UserColumnName="prod_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Quarterly" msprop:Generator_ColumnPropNameInRow="Quarterly" msprop:Generator_ColumnPropNameInTable="QuarterlyColumn" msprop:Generator_ColumnVarNameInTable="columnQuarterly" msprop:Generator_UserColumnName="Quarterly" type="xs:int" minOccurs="0" />
+              <xs:element name="Commission_Earned" msprop:Generator_ColumnPropNameInRow="Commission_Earned" msprop:Generator_ColumnPropNameInTable="Commission_EarnedColumn" msprop:Generator_ColumnVarNameInTable="columnCommission_Earned" msprop:Generator_UserColumnName="Commission_Earned" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
